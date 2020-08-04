@@ -1,0 +1,81 @@
+\documentclass{article}
+
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{bigints}
+
+
+\title{Create The First Table}
+\author{}
+\date{}
+
+
+
+\begin{document}
+	tabular environment can be used anywhere while array is only for math related...
+	\section{A Simple Table}
+	In this lesson, I will start making my table. \\
+	\begin{table}[p]
+		\caption{First Table}
+		\centering
+		\begin{tabular}{| c | c | p{4cm} | }
+			E11 & E12 & E13 \\ \hline  %END THE ROW first to place a horizontal line
+			E21 & E22 & E23 \\
+			E31 & E32 & E33 \\
+			E41 & E42 & E43 \\
+			E51 & E52 & Here I've much longer text, inserted intentionally
+		\end{tabular} \\
+  \end{table}
+
+
+\begin{table}[p]
+	\caption{Second Table}
+	\centering
+	\begin{tabular}{| c | m{4cm} | m{4cm} | }
+		E11 & E12 & E13 \\ \hline  %END THE ROW first to place a horizontal line
+		E21 & E22 & E23 \\
+		E31 & E32 & E33 \\
+		E41 & E42: Here I've much longer text, inserted intentionally & E43 \\
+		E51 & E52 & Here I've much longer text, inserted intentionally
+	\end{tabular} \\
+\end{table}
+
+
+
+\begin{table}[p]
+	\caption{Third Table}
+	\centering
+	\begin{tabular}{ >{\bfseries}c  m{4cm}  m{4cm}  }
+		\toprule[0.16em]
+		E11 & E12 & E13 \\ 
+		Product-1 & Descrition & E23 \\
+		Product-2 & Descrition & E33 \\
+		\midrule
+		E41 & E42: Here I've much longer text, inserted intentionally & E43  \\
+		E51 & E52 & Here I've much longer text, inserted intentionally  \\
+		\bottomrule
+	\end{tabular} \\
+\end{table}
+
+
+Here is math table, ...
+\begin{table}[p]
+	\caption{Third Table}
+	\centering
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{  c  c  }
+		\toprule
+		$\theta_A\bigint\frac{x}{y}dxdy$ & $\theta_A\int\frac{y}{x}dydx$ \\  
+		\midrule
+		$\Psi_A=\frac{dx}{dy}$ & $\Psi_b=\frac{dx}{dy}$  \\
+		\midrule
+		Product-2 & Descritionn \\
+		\bottomrule
+	\end{tabular} \\
+\end{table}
+
+
+
+	
+\end{document}

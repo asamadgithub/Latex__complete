@@ -1,0 +1,69 @@
+\documentclass{book}
+
+
+
+\usepackage{fancyhdr}
+\usepackage[hmarginratio=1:1]{geometry}
+\pagestyle{fancy} 
+%\pagestyle{empty}    % no page number except where chapter name is mention
+%\pagestyle{plain}         % no header page number @  middle  footer 
+
+
+\fancyhead{}                % clear all previous fields, 
+\fancyhf{}
+
+% example one
+% -----------------
+%\pagestyle{fancy}         % fancy page style, with three parts
+%\lhead{On the left side of page}
+%\chead{Maxi}
+%\rhead{Right of Head}
+%\lfoot{Left of foot}
+%\cfoot{Middle}
+%\rfoot{Right foot}
+%\renewcommand{\footrulewidth}{0.50pt}
+%\renewcommand{\headrulewidth}{2.50pt}
+
+
+% example putting even and ODD page diffrently..
+% ---------------------------------------------
+\fancyhead[RO,LE]{Right odd left even}
+\fancyfoot[CO,CE]{Right odd left even}
+\cfoot{\thepage}
+
+
+
+
+
+
+\usepackage{enumitem}
+
+% For getting dumy text
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+\title{Book about header and Footer}
+\author{Maxi}
+\date{Oct 19th, 2019}
+
+
+
+\begin{document}
+	\maketitle
+	In this lesson, the primary focus is on learning various kinds of headers and footers using "fancyhdr" package. For writing thesis, need to use "book" class instead of article. Numbering style ... different on even and off pages.
+	
+	\chapter{Fancy Header and Footer}
+		Can be used for following reaons
+		\begin{enumerate}
+			\item Separate header footer for even and odd page.
+			\item three part header/footer instead of single part.
+			\item different header footer for Chapter pages.
+		\end{enumerate}
+	% Here goes the text without any meaning
+	\blindtext[30]
+	
+
+
+	
+	
+\end{document}

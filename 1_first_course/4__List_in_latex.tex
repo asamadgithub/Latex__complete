@@ -1,0 +1,72 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[text={6in,8in}]{geometry}
+\usepackage[inline]{enumitem}
+
+\title{Get to know the lists in Latex}
+\author{Maxi}
+\date{Oct 18th, 2019}
+
+\begin{document}
+	\maketitle
+	There are three list environment, namely: 1): itemize , 2): enumerate , 3): description \\
+	They are included in the package called : package  "enumitem" as above 
+	
+	%-----------------------------------------------------------------
+	\section{Vertical List in Latex}
+		\subsection{Itemize Environment in Latex List}
+		
+			\begin{itemize}[leftmargin=3in, label = $\ast$]
+				\item List1
+				\item List2
+				\item List3
+			\end{itemize}
+		
+		\subsection{Enumerate Environemnt in Latex List}
+			\begin{enumerate}[label=\Roman*]   %roman,alph,arabic..
+				\item The first Enu
+				\item The second Enu
+			\end{enumerate}
+		
+		Here is some text of paragraph with the intention that later we will restart from the "Fourth" Enu so
+		
+		\begin{enumerate}[resume,label=\Roman*]   %roman,alph,arabic..
+			\item: The fourth Enu
+			\item The fifth Enu
+			\item The sixth Enu
+			\subitem This is something I want to exclude from the item but need to insert inbetween.
+			\item The seven Enu
+		\end{enumerate}
+	
+	\subsection{How to Put a box around these number}
+		\begin{enumerate}[label=\fbox{\arabic*}]
+			\item Box
+			\item Box
+		\end{enumerate}
+	
+	
+	%-----------------------------------------------------------------
+	\section{Horizontal List}
+		\begin{enumerate*}
+			\item one one one
+			\item two two two
+			\item three three three
+		\end{enumerate*}
+	%-----------------------------------------------------------------
+	\section{Different Marking symbol for each element}
+		\begin{enumerate}
+			\item[$-$]        Minues item
+			\item[$\ast$]    asteric item
+			\item[$\star$]   star item
+		\end{enumerate}
+		%-----------------------------------------------------------------
+	\section{Description}
+		\begin{description}
+			\item[First:] Can we look at the  description
+			\item[Second:] Yes we "CAN" look at the  description
+	    \end{description}
+		
+
+\end{document}
+
+

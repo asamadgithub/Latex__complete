@@ -1,0 +1,135 @@
+\documentclass{article}
+
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+
+\begin{document}
+	\section{Simple Mathematical Equations-1}
+	Just start with the simple mathematical equations, Inside the text paragraph.. two modes are there. 
+	\begin{itemize}
+		\item Inline mode:  
+		\item Display mode:
+	\end{itemize}
+   So Let's see how this work. \\
+   This is an inline mathematical equations    $A=\frac{B}{B+C}$ . In this case the line spacing will stay the same. This is good to increase visibility and while the line spacing will remain the same. In this case the line spacing will stay the same. This is good to increase visibility and while the line spacing will remain the same. In this case the line spacing will stay the same. This is good to increase visibility and while the line spacing will remain the same. Other option is display typesetting as shown here   ${\displaystyle \frac{A}{B+C}}$. Other option is display typesetting. Other option is display typesetting. Other option is display typesetting. And once again the inline mode option  $\sqrt{x^{2}+y^{2}}$.And one again the inline mode option. And one again the inline mode option. And one again the inline mode option
+
+%-----------------------------------------------------------------------------------------------------------------------
+
+
+   \section{Some Commonly Used Formulas}
+	
+	
+	\subsection{Fraction}
+	\[ \frac{4}{5}+\frac{7}{13} + 3\frac{1}{16}   \]
+	
+	
+	\subsection{Exponents and subscripts}
+	\[2x , 2_x , x^2 , x_2^2 , x_{12}^{36} \]
+	
+	\subsection{Sums and Product}
+	\[  \sum_{i=1}^{n} x_{i}^m  \]  \quad \[ \prod_{i=1}^{n} x_{i}^a \]
+	
+	\subsection{Multiline subscript and superscript}
+	\[  \sum_{\substack{i \leq j \leq q     \\  a <b \leq c      }}^{m,n} X(i,j)   \]
+	
+	\subsection{Limit Formula}
+	\[  lim_{x\to a}  \frac{f(x)-f(a)}{x-a}  \]
+	
+	
+	\[     \lim\limits_{x \to \infty}    \]
+	
+	
+	\[     \lim\limits_{x \to \infty}   \frac{x-a}{x} \]
+	
+	
+	\subsection{Integrals}
+	 $ \int_{0}^{\frac{\pi}{2}}  sinx dx = 2 $
+	 
+	 
+	 \subsection{Multifunction Value using "Case environment"}
+	 	\[
+	 	f(x) = 
+	 			\begin{cases}
+	 	        -x^3   ,& \text{if $x<4$} \\
+	 	        \theta+2x  ,& \text{if $-5 \leq x \leq 0$} \\
+	 	        x^4    ,& \text{Otherwise $x \geq 10$}  \\
+	           \end{cases}
+      \]
+	 
+	 \section{Equation Environments}
+	 
+	 \subsection{EQN array Environment}
+	 	\begin{eqnarray}
+	     &90000&= 2x + 22x + 3x^2 + ffffff \\
+	     	 &90&= 2x + 22x + 3x^2 + ffffff \\
+	     	 &9&= 2x + 22x + 3x^2 + ffffff
+	 	\end{eqnarray}
+	 	
+	 	\subsection{Split Environment}
+	 	Nice thing, it allows the nesting like below
+	 	\begin{equation}
+	 	\begin{split}
+	 	V= \frac{4\pi r^3}{3} \\
+	 	=\frac{abc}{def}
+	 	\end{split}
+	 	\end{equation}
+	 	
+	 	\subsection{align Environment}
+	 		\subsubsection{Simple Equation}
+	 			\begin{align}
+	 	        	3x &= 4y \\
+	 	        	2x-5 &= y \\
+	 	    	    3x+12 &= 36 
+	 	    	\end{align}
+	 	
+	 		\subsubsection{Linked Equation}
+	 			\begin{align}
+	 			3x &= 4y       &     2a&=b   &    X&=d \\
+	 			3x &= 4y       &     2a&=b   &    X&=d \\
+	 			3x +2y +nd &= 4y       &     90x + 120t + ut&=b   &    X&=d
+	 			\end{align}
+	 			
+	 		\subsection{aligned Environment}
+	 			\subsubsection{Paranthesis on both sides}
+	 		 		\begin{equation}
+	 		 			\left\{
+	 		 			\begin{aligned}
+	 		 			K.E. &= \frac{1}{2}mv^2 \\
+	 		 			p &= mgh 
+	 		 			\end{aligned}
+	 		 			\right	\}
+	 		 		\end{equation}
+	 		 		
+	 		 		
+	 		 		
+	 		\subsection{aligned Environment}
+	 		 	\subsubsection{Paranthesis on both sides}
+	 		 	\begin{equation}
+	 		 	\left.
+	 		 	\begin{aligned}
+	 		 	K.E. &= \frac{1}{2}mv^2 \\
+	 		 	p &= mgh 
+	 		 	\end{aligned}
+	 		 	\right	\}
+	 		 	\qquad \text{Here comes the description of the equations}
+	 		 \end{equation}
+	 		
+	 		
+	 		\section{Matrix Environment, b , p , v , ...}
+	 		
+	 		 	\subsection{matrix}
+	 		 	
+	 		 	$
+	 		 		\begin{pmatrix}
+	 		 			1 & 2 & 3 \\
+	 		 			1 & 2 & 3 \\
+	 		 			1 & 2 & 3 \\
+	 		 		\end{pmatrix}
+	 		 	$
+	 		
+
+
+
+
+\end{document}

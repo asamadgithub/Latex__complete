@@ -1,0 +1,46 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+
+
+
+\begin{document}
+
+	\chapter{Builtin Style and other package}
+	\section{Default Styles}
+	\textbf{By default: There are "4" page styles available.} \\
+	\underline{There names are followings:} \\
+	\textit{Names with arabic numering scheme} \\	
+	\begin{enumerate}
+		\item empty  , no header and no footer
+		\item plan     , footer has the numer at the center 
+		\item headings , no footer header contains name of chapter and section. \\
+		\textbf{Please Note:} "article" class has no chapter.
+		\item myheadings , no footer header contain chapter name and user suplied info 		
+	\end{enumerate}
+
+   \section{Modification in footer style}
+   Threre are three ways to modify.
+   \begin{enumerate}
+   		\item Thou can redefine these styles
+   		\item Quickly modify using Latex variables, something on fly-mode
+   		\item Use other package , which has more styles available in it e.g. "fancyhdr"
+   	\end{enumerate}	
+   		\subsection{Commands for Page attributes}
+   			\begin{enumerate}[label=\Roman*]
+   				\item pagstyle "plane"
+   				\item thispagestyle "empty" , header and footer only for this page
+   				\item pagenumering "x" , arabic, roman, Roman, alph, Alph
+   				\item pagebreak
+   				\item nopagebreak
+   				\item thepage , insert the current page number e.g. in the footer or header.
+   				\item clearpage , ends the page and puts the pending figures and tables on the separate float page with no text
+        	\end{enumerate}
+   	
+	
+	
+	
+	
+\end{document}

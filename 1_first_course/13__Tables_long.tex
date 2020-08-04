@@ -1,0 +1,153 @@
+\documentclass{article}
+
+
+\usepackage{tabularx}
+\usepackage{longtable,lscape}
+\usepackage{rotating}
+
+
+\begin{document}
+	
+	In this document, I'm going to use very long tables , just for the sake of understanding.
+	
+	% Normal Table as it is, just like we make
+	\begin{table}[h]
+		\begin{center}
+			\begin{tabular}{|c| c| l|}
+				\hline
+				S.N.   & Name of the candidate & Details of the Candidate \\     \hline
+				1.       & Name-1                        & Deatils are coming \\ \hline
+				2.      & Name-2                        & \\  \hline
+			    3.      & Name-3                        & Here comes another \\ \hline
+			    4.      & Name-4                        & What do you think about it \\  \hline
+			    5.      & Name-5                        & Nice CATH \\   \hline
+			    6.      & Name-2                        & \\  \hline
+			    7.      & Name-3                        & Here comes another \\ \hline
+			    8.      & Name-4                        & What do you think about it \\  \hline
+			    9.      & Name-5                        & Nice CATH \\   \hline
+				
+			\end{tabular}
+		\caption{This is Normal Table}		
+		\end{center}
+	\end{table}
+	
+	
+	% Rotated Table 
+	
+		\begin{sidewaystable}[h]
+		\begin{center}
+			\begin{tabular}{|c| c| l|}
+				\hline
+				S.N.   & Name of the candidate & Details of the Candidate \\     \hline
+				1.       & Name-1                        & Deatils are coming \\ \hline
+				2.      & Name-2                        & \\  \hline
+				3.      & Name-3                        & Here comes another \\ \hline
+				4.      & Name-4                        & What do you think about it What do you think about it What do you think about it \\  \hline
+				5.      & Name-5                        & Nice CATH Nice CATH Nice CATH Nice CATH Nice CATH Nice CATH\\   \hline
+				6.      & Name-2                        & \\  \hline
+				7.      & Name-3                        & Here comes another Here comes another Here comes another Here comes another Here comes another \\ \hline
+				8.      & Name-4                        & What do you think about it \\  \hline
+				9.      & Name-5                        & Nice CATH \\   \hline
+				10.       & Name-1                        & Deatils are coming \\ \hline
+				11.      & Name-2                        & \\  \hline
+				12.      & Name-3                        & Here comes another  Here comes another\\ \hline
+				13.      & Name-4                        & What do you think about it \\  \hline
+				14.      & Name-5                        & Nice CATH \\   \hline
+				15.      & Name-2                        & \\  \hline
+				16.      & Name-3                        & Here comes another \\ \hline
+				17.      & Name-4                        & What do you think about it What do you think about i \\  \hline
+				18.      & Name-5                        & Nice CATH \\   \hline
+				19.      & Name-4                        & What do you think about it \\  \hline
+				20.      & Name-5                        & Nice CATH \\   \hline
+				21.      & Name-2                        & \\  \hline
+				22.      & Name-3                        & Here comes another \\ \hline
+				23.      & Name-4                        & What do you think about it What do you think about i \\  \hline
+				24.      & Name-5                        & Nice CATH \\   \hline
+				25.      & Name-2                        & \\  \hline
+				26.      & Name-3                        & Here comes another  Here comes another\\ \hline
+				27.      & Name-4                        & What do you think about it \\  \hline
+				28.      & Name-5                        & Nice CATH \\   \hline
+				29.      & Name-2                        & \\  \hline		
+			\end{tabular}	
+		\caption{This is Horizontal table}	
+		\end{center}
+	\end{sidewaystable}
+	
+	
+	
+	
+	
+	% Table extendd to the next page as well
+	\begin{landscape}
+		%\begin{center}
+			\begin{longtable}{|p{2cm}| p{4cm}| p{12cm}|}
+				\caption{This is made using longtable and landsccaoe environment} \\
+				\hline
+				\label{T3}
+				
+				%whatever we need on first page, insert here before before...
+				S.N.   & Name of the candidate & Details of the Candidate \\     \hline
+				
+				
+				\endfirsthead
+				
+				\hline
+				S.N.   & Name of the candidate & Details of the Candidate \\
+				
+				\endhead
+				\hline
+				1.       & Name-1                        & Deatils are coming \\ \hline
+				2.      & Name-2                        & \\  \hline
+				3.      & Name-3                        & Here comes another \\ \hline
+				4.      & Name-4                        & What do you think about it What do you think about it What do you think about it \\  \hline
+				5.      & Name-5                        & Nice CATH Nice CATH Nice CATH Nice CATH Nice CATH Nice CATH\\   \hline
+				6.      & Name-2                         & \\  \hline
+				7.      & Name-3                         & Here comes another Here comes another Here comes another Here comes another Here comes another \\ \hline
+				8.      & Name-4                         & What do you think about it \\  \hline
+				9.      & Name-5                         & Nice CATH \\   \hline
+				10.       & Name-1                       & Deatils are coming \\ \hline
+				11.      & Name-2                        & \\  \hline
+				12.      & Name-3                        & Here comes another  Here comes another\\ \hline
+				13.      & Name-4                        & What do you think about it \\  \hline
+				14.      & Name-5                        & Nice CATH \\   \hline
+				15.      & Name-2                        & \\  \hline
+				16.      & Name-3                        & Here comes another \\ \hline
+				17.      & Name-4                        & What do you think about it What do you think about i \\  \hline
+				18.      & Name-5                        & Nice CATH \\   \hline
+				19.      & Name-4                        & What do you think about it \\  \hline
+				20.      & Name-5                        & Nice CATH \\   \hline
+				21.      & Name-2                        & \\  \hline
+				22.      & Name-3                        & Here comes another \\ \hline
+				23.      & Name-4                        & What do you think about it What do you think about i \\  \hline
+				24.      & Name-5                        & Nice CATH \\   \hline
+				25.      & Name-2                        & \\  \hline
+				26.      & Name-3                        & Here comes another  Here comes another\\ \hline
+				27.      & Name-4                        & What do you think about it \\  \hline
+				28.      & Name-5                        & Nice CATH \\   \hline
+				29.      & Name-2                        & \\  \hline
+				30.      & Name-3                        & Here comes another \\ \hline
+				31.      & Name-4                        & What do you think about it What do you think about i \\  \hline
+				32.      & Name-5                        & Nice CATH \\   \hline
+				33.      & Name-4                        & What do you think about it \\  \hline
+				34.      & Name-5                        & Nice CATH \\   \hline
+				35.      & Name-2                        & \\  \hline
+				36.      & Name-3                        & Here comes another \\ \hline
+				37.      & Name-4                        & What do you think about it What do you think about i \\  \hline
+				38.      & Name-5                        & Nice CATH \\   \hline
+				39.      & Name-5                        & Nice CATH \\   \hline
+				40.      & Name-4                        & What do you think about it \\  \hline
+				41.      & Name-5                        & Nice CATH \\   \hline
+				42.      & Name-2                        & \\  \hline
+				43.      & Name-3                        & Here comes another \\ \hline
+				44.      & Name-4                        & What do you think about it What do you think about i \\ \hline
+				
+				
+			\end{longtable}		
+		%\end{center}
+	\end{landscape}
+	
+	
+	
+	
+\end{document}
+
