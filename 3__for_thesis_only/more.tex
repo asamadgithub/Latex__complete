@@ -1,0 +1,69 @@
+\documentclass[twoside,12pt, nocentre]{report}
+
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+
+\usepackage{parskip}
+\parindent=1cm
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\usepackage{lipsum}
+
+%---------- Header And Footer Settings -------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\fancyhead{}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\thechapter.\ #1}}{}}
+\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}
+\fancyhead[LO]{\bfseries\nouppercase{\rightmark}\chaptermark}
+
+
+
+\begin{document}
+	
+	\pagenumbering{roman}
+	\include{FrontMatters/TitlePage}
+	\include{FrontMatters/Abstract}
+	
+	
+	
+
+
+    % ----------toc, etc ---------------------
+    \tableofcontents
+    \thispagestyle{empty}
+    
+    \listoffigures
+    
+    \listoftables
+    \clearpage
+    
+   \pagenumbering{arabic} 
+    \setcounter{page}{1}
+   % ---------- Chapters ------------------
+   \include{chapters/chapter1/ch1}
+   \include{chapters/chapter2/ch2}
+
+	
+	
+	
+
+
+\appendix
+\include{appen01}
+
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{naturemag}
+\bibliography{bibfile.bib}
+\cleardoublepage
+
+\include{FrontMatters/ackno}
+
+\end{document}
+
+
+

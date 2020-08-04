@@ -1,0 +1,10 @@
+\contentsline {chapter}{\numberline {1}Background}{1}
+\contentsline {section}{\numberline {1.1}Lattice Structure}{1}
+\contentsline {section}{\numberline {1.2}Perodic Table}{1}
+\contentsline {chapter}{\numberline {2}Detailed Information}{7}
+\contentsline {section}{\numberline {2.1}Limitation}{8}
+\contentsline {section}{\numberline {2.2}Detailed Analysis}{8}
+\contentsline {chapter}{\numberline {A}}{11}
+\contentsline {section}{\numberline {A.1}Extra Information}{11}
+\contentsline {section}{\numberline {A.2}Some More Info}{11}
+\contentsline {chapter}{References}{12}
