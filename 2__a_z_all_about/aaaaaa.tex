@@ -1,0 +1,44 @@
+\documentclass{article}
+
+
+
+\begin{document}
+\title{Using Bibliogrpahies in \LaTeX}
+\author{Nauman}
+\maketitle
+
+% -------------------- Main document --------------------------------
+
+\section{Introduction} 
+Using and managing bibliographies in \LaTeX\ is very easy. These are the steps required to use them: 
+
+\begin{enumerate}
+	\item Create a main document file 
+	\item Collect bibliography entries in a \verb|.bib| file. For this: 
+	   \begin{itemize}
+	     \item Get the bibliograph  from Google Scholar/ACM or where ever or 
+	     \item Write the entry yourself. 
+     \end{itemize}
+	\item Add a \verb|\bibliographystyle| and a \verb|\bibliography| command to your document. 
+	\item Bild the file a couple of times to get the citations in the main document. 
+\end{enumerate}
+
+\section{Some Background Text}
+We are going to use this section to put some text in our document and at some points, we are going to inset a reference. This, for example, is going to turn into a reference~\cite{Control-CDW-Okamoto-1992}. This~\cite{Lattice-Dynamics-Fehske-2000} is yet another reference. And so on~\cite{Dynamical-Monkowsky-2017}.
+
+And the gravity waves stuff would come here~\cite{Gravity-Wave-2015}
+
+
+
+
+% -------------------------------------------------------------------
+% add bibliography-related commands here 
+\bibliographystyle{naturemag}
+\bibliography{bibfile.bib}
+
+
+
+
+
+
+\end{document}
